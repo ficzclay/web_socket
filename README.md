@@ -57,34 +57,6 @@ ws-chat/
 └── server.js
 ```
 
-5. lalu klik tombol Create repository
-
-## Menambahkan Remote Repository
-
-- Remote Repository merupakan server repositori yang akan digunakan untuk menyimpan segala perubahan yang dilakukan pada repositori lokal, dan bisa diakses oleh banyak pengguna
-- Untuk menambahkan remote repository server, gunakan command
-
-```
-git remote add origin [url]
-```
-
-## Mengirim perubahan ke server (Push)
-
-- Untuk mengirim perubahan pada repositori lokal ke server, gunakan command
-
-```
-git push -u origin master
-```
-
-## Clone Repository
-
-- git clone digunakan untuk mengambil salinan dari repositori Git dari server ke repositori lokal
-- gunakan command ini untuk melakukan kloning ke repositori lokal
-
-```
-git clone [url]
-```
-
 ## 🚀 Cara Menjalankan Aplikasi
 
 1. **Instal dependensi terlebih dahulu:**
