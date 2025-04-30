@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head><title>WebSocket Chat</title></head>
+<body>
+  <input id="msgInput" placeholder="Ketik pesan..." />
+  <button onclick="send()">Kirim</button>
+  <ul id="chatBox"></ul>
+
+  <script>
+    const ws = new WebSocket('ws://localhost:3000');
+    ws.onmessage = e => {
+      const li = document.createElement('li');
+      li.textContent = e.data;
+      document.getElementById('chatBox').appendChild(li);
+    };
+
+    function send() {
+      const msg = document.getElementById('msgInput').value;
+      ws.send(msg);
+      document.getElementById('msgInput').value = '';
+    }
+  </script>
+</body>
+</html>
